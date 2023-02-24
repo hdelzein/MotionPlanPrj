@@ -143,7 +143,7 @@ State BehaviorPlannerFSM::state_transition(const State& ego_state, State goal,
       auto ang = goal.rotation.yaw + M_PI;
       //goal.location.x += 1.0;  // <- Fix This
       //goal.location.y += 1.0;  // <- Fix This
-      goal.location.x += _stop_line_buffer * std::cos (ang);
+      goal.location.x += _stop_line_buffer * std::cos(ang);
       goal.location.y += _stop_line_buffer * std::sin(ang);
       
 
